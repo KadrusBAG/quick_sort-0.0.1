@@ -27,7 +27,7 @@ void QuickSort(int * array, int left, int right){
 		while(array[j]>pivot){
 			j--;
 		}
-		if(i<j){
+		if(i<=j){
 			swap(array[i], array[j]);
 			i++; j--;
 		}
