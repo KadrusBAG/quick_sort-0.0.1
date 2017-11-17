@@ -52,9 +52,9 @@ int main(){
 	int * array = new int[size];
 	if(read(array, size)){
 		QuickSort(array, 0, size - 1);
-	}
-	for(unsigned int i=0; i<size; ++i){
-		cout<<array[i]<<" ";
+		for(unsigned int i=0; i<size; ++i){
+			cout<<array[i]<<" ";
+		}
 	}
 	return 0;
 }
