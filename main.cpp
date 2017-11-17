@@ -56,5 +56,6 @@ int main(){
 			cout<<array[i]<<" ";
 		}
 	}
+	delete[]array;
 	return 0;
 }
