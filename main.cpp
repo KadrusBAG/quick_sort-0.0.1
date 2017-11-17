@@ -20,7 +20,7 @@ bool read(int * array, unsigned int size){
 void QuickSort(int * array, int left, int right){
 	int i=left, j=right;
 	int pivot=array[(left+right)/2];
-	while(i<j){
+	while(i<=j){
 		while(array[i]<pivot){
 			i++;
 		}
@@ -45,7 +45,7 @@ int main(){
 	string number;
 	getline(cin, number);
 	istringstream num(number);
-	if(!(num>>size)||(size<0)){
+	if(!(num>>size)||(size<2)){
 		cout<<"An error has occured while reading input data"<<endl;
 		return -1;
 	}
@@ -54,7 +54,7 @@ int main(){
 		QuickSort(array, 0, size - 1);
 	}
 	for(unsigned int i=0; i<size; ++i){
-		cout<<array[i];
+		cout<<array[i]<<" ";
 	}
 	return 0;
 }
